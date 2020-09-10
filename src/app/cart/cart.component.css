@@ -1,0 +1,67 @@
+.coupons-base-button {
+  float: right;
+  padding: 4px 16px;
+  position: relative;
+  color: #ff3f6c;
+  border: 1px solid #ff3f6c;
+  border-radius: 3px;
+  text-transform: none;
+  cursor: pointer;
+  font-weight: 600;
+  top: -4px;
+  right: 0;
+  background: #fff;
+  margin-left: 15px;
+}
+.addToWishlist-base-wishlistChevron {
+  float: right;
+  font-size: 20px;
+  color: #282c3f;
+}
+.addToWishlist-base-wishlistBlock {
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  color: inherit;
+  padding: 12px;
+  position: relative;
+  font-weight: 600;
+  padding: 16px 12px 16px 16px;
+  margin-top: 24px;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+}
+.addToWishlist-base-wishlistBlock {
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  color: inherit;
+  padding: 12px;
+  position: relative;
+  font-weight: 600;
+  padding: 16px 12px 16px 16px;
+  margin-top: 24px;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+}
+.addToWishlist-base-wishlistActive {
+  display: inline-block;
+  vertical-align: text-bottom;
+  font-size: 16px;
+  color: #282c3f;
+}
+.addToWishlist-base-wishlistText {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #282c3f;
+}
+
+.cart .col-md-8 span{
+  font-weight: 600;
+  font-size: initial;
+}
+
+.container .cart{
+  margin-top: 5%;
+}

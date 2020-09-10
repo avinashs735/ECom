@@ -1,0 +1,27 @@
+
+
+export interface Ievents {
+  id: number,
+  name: string,
+  date: string,
+  time: string,
+  price: number,
+  imageUrl: string,
+  location?: {
+    city: string,
+    address: string,
+    country: string
+  }
+  onlineUrl?: string,
+  sessions: Isession[]
+}
+
+export interface Isession {
+  id: number;
+  name: string;
+  presenter: string ;
+  duration: number;
+  level: string ;
+  abstract: string;
+  voters: string[];
+}

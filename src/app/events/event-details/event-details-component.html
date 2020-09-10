@@ -1,0 +1,52 @@
+<div class="container">
+  <img [src]="event?.imageUrl" [alt]="event?.name">
+
+  <div class="row">
+    <div class="col-md-11">
+      <h2>{{event?.name}} </h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div><strong>Date:</strong> {{event?.date}}</div>
+      <div><strong>Time:</strong> {{event?.time}}</div>
+      <div><strong>Price:</strong> ${{event?.price}}</div>
+    </div>
+    <div class="col-md-6">
+      <address>
+        <strong>Address:</strong><br />
+        {{event?.location?.address}}<br />
+        {{event?.location?.city}}, {{event?.location?.country}}
+      </address>
+    </div>
+  </div>
+  <div class="row" style="margin: 1%;">
+      <div class="col-md-3" >
+        <h3 style="margin: 0;">Session details</h3>
+      </div>
+      <div class="col-md-7">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary" [class.active]="filterBy==='all'" (click)="filtersession('all')">Default</button>
+          <button type="button" class="btn btn-primary"[class.active]="filterBy==='beginner'" (click)="filtersession('beginner')">Beginner</button>
+          <button type="button" class="btn btn-primary"[class.active]="filterBy==='intermediate'" (click)="filtersession('intermediate')">Intermediate</button>
+          <button type="button" class="btn btn-primary"[class.active]="filterBy==='advanced'" (click)="filtersession('advanced')">Advanced</button>
+        </div>
+
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-primary" (click)=AddSession()> Add Session</button>
+      </div>
+  </div>
+
+
+
+  <div class="rows" >
+    <div *ngFor="let session of visiblesessions" >
+      <session-list  [session]='session' *ngIf="!createmode"></session-list>
+    </div>
+      <create-session *ngIf="createmode" (Sessiondata)='Sessiondata($event)'></create-session>
+  </div>
+
+</div>
+<!-- forr input [] for output() -->

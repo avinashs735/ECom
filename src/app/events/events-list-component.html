@@ -1,0 +1,17 @@
+<div class="container">
+
+  <h2>Upcoming Anglular Events List: </h2>
+  <hr/>
+
+<!-- <event-thumbnail #thumbnail  [event]="Inputevent"></event-thumbnail> using thumnail to be  accessed -->
+<div class="row">
+    <div class="col-md-6" *ngFor="let event of Inputevent">
+      <event-thumbnail  [event]="event"></event-thumbnail>
+    </div>
+</div>
+
+
+<!-- <button class="btn btn-primary" (click)="thumbnail.logfoo()"> Click me !!</button> -->
+
+
+</div>

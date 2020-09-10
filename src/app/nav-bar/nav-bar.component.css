@@ -1,0 +1,83 @@
+.mat-toolbar.mat-primary {
+  background: #2E2E2E !important;
+  color: #fff;
+}
+input[type="button"]{
+  outline:none;
+}
+input[type="button"]::-moz-focus-inner {
+  border: 0;
+}
+
+button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+  outline: none !important;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+.fa-cart-plus:before {
+  content: "\f217";
+}
+.main_menu .cart i:after {
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #f13d80;
+  width: 14px;
+  height: 14px;
+  right: -8px;
+  top: -8px;
+  content: "5";
+  text-align: center;
+  line-height: 15px;
+  font-size: 10px;
+  color: #fff;
+}
+.desktop-userIconsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  padding: 0 12px 0 17px;
+  position: relative;
+  display: flex;
+  height: 40px;
+}
+.desktop-userTitle {
+  color: white;
+  position: absolute;
+  bottom: 4px;
+  left: 1px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+  padding-top: 10px;
+  line-height: 6px;
+}
+.desktop-user {
+  position: relative;
+  height: 60px;
+  /* margin: 0 20px 0 15px; */
+}
+.desktop-actions {
+  /* float: right; */
+
+  display: flex;
+  line-height: 0;
+  height: 40px;
+  /* margin: 20px 30px 0 10px; */
+}
+.desktop-iconUser {
+  margin: 10px 0 0;
+  position: absolute;
+  bottom: 13px;
+  left: 5px;
+  display: block;
+}
+
+.sprites-headerUser {
+  width: 24px;
+  height: 24px;
+  background-position: -298px -56px;
+}
